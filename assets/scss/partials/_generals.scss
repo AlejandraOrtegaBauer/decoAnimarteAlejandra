@@ -1,10 +1,29 @@
 /* Aquí vamos a poner valores generales, como por ejemplo las etiquetas body, h1, etc... */
 
+@font-face {
+    font-family: "anothershabby";
+    src: url("../fonts/Anothershabby.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", sans-serif; //Se debe modificar por Public Sans.
+    font-family: "Public Sans", sans-serif;
     line-height: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    display: none;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
 }

@@ -1,1 +1,46 @@
 /*Aquí vamos a poner todo lo referente a la adaptación responsive del sitio */
+
+/** Barra de Navegación **/
+@media screen and (max-width: 992px) {
+    /* ------ WhatsApp ------ */
+    .appWhatsapp {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    /* ------ flecha para volver arriba ------ */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+
+        i {
+            font-size: 22px;
+            position: absolute;
+            left: 5px;
+        }
+    }
+
+    .arrow-up {
+        height: 30px;
+    }
+
+    /* ------ Barra de Navegación ------ */
+    .containerNavItems {
+        flex-direction: column;
+    }
+
+    .containerNavAll {
+        justify-content: end;
+        margin-right: 10px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+}
