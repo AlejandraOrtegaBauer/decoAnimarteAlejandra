@@ -2,7 +2,7 @@
 
 /** Barra de Navegación **/
 @media screen and (max-width: 992px) {
-    /* ------ WhatsApp ------ */
+    /* ------ WhatsApp ------
     .appWhatsapp {
         width: 40px;
         height: 40px;
@@ -11,8 +11,9 @@
             width: 70%;
         }
     }
+     */
 
-    /* ------ flecha para volver arriba ------ */
+    /* ------ flecha para volver arriba ------ 
     .back-to-top {
         width: 40px;
         height: 40px;
@@ -27,6 +28,7 @@
     .arrow-up {
         height: 30px;
     }
+    */
 
     /* ------ Barra de Navegación ------ */
     .containerNavItems {
@@ -42,5 +44,10 @@
         margin: 10px 0;
         padding: 10px 0;
         width: 100%;
+    }
+
+    /* ------ Preguntas Frecuentes ------ */
+    .faqItem {
+        width: 60%;
     }
 }

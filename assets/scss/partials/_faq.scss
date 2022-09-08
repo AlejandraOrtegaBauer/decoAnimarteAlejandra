@@ -1,0 +1,41 @@
+/* Aquí va todo lo referente a la sección "Preguntas Frecuentes" */
+
+.containerFaq {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    h2 {
+        font-family: "anothershabby";
+        text-align: center;
+        color: $fontColorMain;
+        font-size: 80px;
+        padding-top: 50px;
+    }
+}
+
+.faqItem {
+    width: 35%;
+    height: auto;
+    margin: 20px 40px;
+}
+
+.faqImg {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.faqInfo {
+    h3 {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: center;
+    }
+}

@@ -61,6 +61,7 @@ a {
   color: #000000;
 }
 
+/* Aquí va todo lo referente al index*/
 .container-index {
   width: 100%;
   background-image: url(../images/wallpaper.png);
@@ -111,6 +112,7 @@ a {
   height: 40px;
 }
 
+/* Aquí va todo lo referente a la sección "Sobre Nosotros" */
 .containerAboutUs {
   display: flex;
   flex-direction: row;
@@ -159,30 +161,70 @@ a {
   padding: 30px 0;
 }
 
+/* Aquí va todo lo referente a la sección "Preguntas Frecuentes" */
+.containerFaq {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.containerFaq h2 {
+  font-family: "anothershabby";
+  text-align: center;
+  color: #f6d308;
+  font-size: 80px;
+  padding-top: 50px;
+}
+
+.faqItem {
+  width: 35%;
+  height: auto;
+  margin: 20px 40px;
+}
+
+.faqImg img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqInfo h3 {
+  text-align: center;
+  font-weight: 600;
+}
+.faqInfo p {
+  text-align: center;
+}
+
 /*Aquí vamos a poner todo lo referente a la adaptación responsive del sitio */
 /** Barra de Navegación **/
 @media screen and (max-width: 992px) {
-  /* ------ WhatsApp ------ */
+  /* ------ WhatsApp ------
   .appWhatsapp {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
+
+      img {
+          width: 70%;
+      }
   }
-  .appWhatsapp img {
-    width: 70%;
-  }
-  /* ------ flecha para volver arriba ------ */
+   */
+  /* ------ flecha para volver arriba ------ 
   .back-to-top {
-    width: 40px;
-    height: 40px;
+      width: 40px;
+      height: 40px;
+
+      i {
+          font-size: 22px;
+          position: absolute;
+          left: 5px;
+      }
   }
-  .back-to-top i {
-    font-size: 22px;
-    position: absolute;
-    left: 5px;
-  }
+
   .arrow-up {
-    height: 30px;
+      height: 30px;
   }
+  */
   /* ------ Barra de Navegación ------ */
   .containerNavItems {
     flex-direction: column;
@@ -195,5 +237,9 @@ a {
     margin: 10px 0;
     padding: 10px 0;
     width: 100%;
+  }
+  /* ------ Preguntas Frecuentes ------ */
+  .faqItem {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */
