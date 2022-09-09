@@ -7,10 +7,11 @@
     justify-content: space-evenly;
 
     h2 {
+        width: 100%;
         font-family: "anothershabby";
         text-align: center;
         color: $fontColorMain;
-        font-size: 80px;
+        font-size: 5em; //80px;
         padding-top: 50px;
     }
 }

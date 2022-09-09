@@ -2,34 +2,6 @@
 
 /** Barra de Navegación **/
 @media screen and (max-width: 992px) {
-    /* ------ WhatsApp ------
-    .appWhatsapp {
-        width: 40px;
-        height: 40px;
-
-        img {
-            width: 70%;
-        }
-    }
-     */
-
-    /* ------ flecha para volver arriba ------ 
-    .back-to-top {
-        width: 40px;
-        height: 40px;
-
-        i {
-            font-size: 22px;
-            position: absolute;
-            left: 5px;
-        }
-    }
-
-    .arrow-up {
-        height: 30px;
-    }
-    */
-
     /* ------ Barra de Navegación ------ */
     .containerNavItems {
         flex-direction: column;
@@ -46,8 +18,101 @@
         width: 100%;
     }
 
+    /* ------ Sobre Nosotros ------ */
+    .containerDescription {
+        p {
+            padding-right: 0;
+        }
+    }
+
     /* ------ Preguntas Frecuentes ------ */
     .faqItem {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ------ WhastApp ------ */
+    .appWhatsapp {
+        width: 46px;
+        height: 46px;
+
+        img {
+            width: 75%;
+        }
+    }
+
+    /* ------ flecha para volver arriba ------ */
+    .back-to-top {
+        width: 46px;
+        height: 46px;
+
+        i {
+            top: 2px;
+            left: 2px;
+        }
+    }
+
+    .arrow-up {
+        height: 42px;
+    }
+
+    /* ------ Sobre Nosotros ------ */
+    .containerDescription {
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    /* ------ Preguntas Frecuentes ------ */
+    .containerFaq {
+        h2 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* ------ Sobre Nosotros ------ */
+    .containerDescription {
+        p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    /* ------ Sobre Nosotros ------ */
+    .containerDescription {
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    /* ------ Preguntas Frecuentes ------ */
+    .containerFaq {
+        h2 {
+            font-size: 2em;
+        }
+
+        .faqInfo {
+            h3 {
+                font-size: 20px;
+            }
+        }
+
+        .faqImg {
+            img {
+                width: 100%;
+            }
+        }
     }
 }
