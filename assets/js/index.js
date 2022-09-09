@@ -11,7 +11,11 @@ function pressLinkMenu() {
     //Recorremos todos los items del navbar
     linkMenu.forEach((link) => {
         link.addEventListener("click", function () {
-            buttonToggler.click();
+            //Solo activamos el evento "click" del menú hamburguesa
+            //cuando la pantalla es responsive (menor e igual a 992px)
+            if (screen.width <= 992) {
+                buttonToggler.click();
+            }
             //Vemos si el botón sobre el que hicimos click es
             //el "activo" o no
             if (!link.classList.contains("active")) {

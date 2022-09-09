@@ -31,6 +31,8 @@ a {
 /* Aquí vamos a poner las variables que iremos utilizando a lo largo del proyecto */ /* Aquí irá todo lo referente a la barra de navegación*/
 #container-navbar {
   background-color: #f9f7f2;
+  position: fixed;
+  width: 100%;
 }
 
 /*
@@ -41,19 +43,26 @@ a {
 }
 */
 .containerNavItems {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 0;
 }
-.containerNavItems > .active {
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-collapse > .active {
   background-color: #f6d308;
   border-radius: 4px;
   color: #000000;
 }
 
 .nav-item {
+  text-align: center;
   font-size: 18px;
   margin: 0 10px;
   padding: 10px;
@@ -67,6 +76,10 @@ a {
 }
 
 /* Aquí va todo lo referente al index*/
+#container-main {
+  padding: 0;
+}
+
 .container-index {
   width: 100%;
   background-image: url(../images/wallpaper.png);
@@ -142,7 +155,7 @@ a {
   text-align: center;
   color: #f6d308;
   font-size: 5em;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .containerDescription p {
   padding-top: 20px;
@@ -179,7 +192,7 @@ a {
   text-align: center;
   color: #f6d308;
   font-size: 5em;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .faqItem {
@@ -214,6 +227,7 @@ a {
     margin-right: 10px;
   }
   .nav-item {
+    display: block;
     margin: 10px 0;
     padding: 10px 0;
     width: 100%;
