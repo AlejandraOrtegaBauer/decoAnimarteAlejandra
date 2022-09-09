@@ -19,6 +19,12 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px 0;
+
+    > .active {
+        background-color: $fontColorMain;
+        border-radius: 4px;
+        color: #000000;
+    }
 }
 
 .nav-item {
@@ -28,8 +34,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    &:hover,
-    &:active {
+    &:hover {
         border-radius: 4px;
         background-color: $fontColorMain;
         color: #000000;

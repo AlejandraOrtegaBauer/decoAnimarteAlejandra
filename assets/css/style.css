@@ -47,6 +47,11 @@ a {
   justify-content: center;
   padding: 10px 0;
 }
+.containerNavItems > .active {
+  background-color: #f6d308;
+  border-radius: 4px;
+  color: #000000;
+}
 
 .nav-item {
   font-size: 18px;
@@ -55,7 +60,7 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.nav-item:hover, .nav-item:active {
+.nav-item:hover {
   border-radius: 4px;
   background-color: #f6d308;
   color: #000000;
