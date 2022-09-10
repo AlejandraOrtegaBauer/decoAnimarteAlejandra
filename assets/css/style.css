@@ -179,12 +179,64 @@ a {
   padding: 30px 0;
 }
 
+/* Aquí va todo lo referente a la sección "Productos" */
+/*Productos Generales*/
+#products {
+  width: 100%;
+}
+#products h2 {
+  width: 100%;
+  font-family: "anothershabby";
+  text-align: center;
+  color: #f6d308;
+  font-size: 4.75em;
+  padding-top: 80px;
+}
+
+.containerImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+  width: 24.37rem;
+  height: 24.37rem;
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img1 h3, .img2 h3, .img3 h3, .img4 h3, .img5 h3, .img6 h3 {
+  font-size: 3.48em;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
 .img1 {
   background-image: url(/assets/images/products/pinturas.png);
 }
 
-.titulo1 {
-  color: aqua;
+.img2 {
+  background-image: url(/assets/images/products/pincelesYherramientas.png);
+}
+
+.img3 {
+  background-image: url(/assets/images/products/deco.png);
+}
+
+.img4 {
+  background-image: url(/assets/images/products/madera.png);
+}
+
+.img5 {
+  background-image: url(/assets/images/products/workshops.png);
+}
+
+.img6 {
+  background-image: url(/assets/images/products/lacasYbarnices.png);
 }
 
 /* Aquí va todo lo referente a la sección "Preguntas Frecuentes" */
