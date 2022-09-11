@@ -33,6 +33,7 @@ a {
   background-color: #f9f7f2;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 /*
@@ -79,6 +80,8 @@ a {
 .contact {
   background-image: url(/assets/images/footertransparente.png);
   padding-top: 15em;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contact h2 {
   font-weight: 500;

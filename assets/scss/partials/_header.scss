@@ -4,6 +4,7 @@
     background-color: $backgroundColorPrimary;
     position: fixed;
     width: 100%;
+    z-index: 9999;
 }
 
 /*
@@ -49,21 +50,23 @@
     }
 }
 
-
 /*    Acá va todo lo relacionado con el Footer/Contacto   */
 
-.contact{
+.contact {
     background-image: url(/assets/images/footertransparente.png);
     padding-top: 15em;
-    h2{
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
         font-weight: 500;
         font-size: 4rem; //64px
         text-align: center;
-        color:  rgba(0, 0, 0, 1);
+        color: rgba(0, 0, 0, 1);
         margin-top: 2em;
         margin-bottom: 1.5em;
     }
-    .infoContacto{
+    .infoContacto {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -71,10 +74,10 @@
         padding-bottom: 4em;
         padding-left: 2.5em;
         padding-right: 2.5em;
-        a{
+        a {
             font-size: 2.81em; //45px
             font-weight: 400;
-            &:hover{
+            &:hover {
                 color: $fontColorMain;
             }
         }
