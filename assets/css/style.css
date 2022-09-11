@@ -75,6 +75,36 @@ a {
   color: #000000;
 }
 
+/*    Acá va todo lo relacionado con el Footer/Contacto   */
+.contact {
+  background-image: url(/assets/images/footertransparente.png);
+  padding-top: 15em;
+}
+.contact h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+.contact .infoContacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 4em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+.contact .infoContacto a {
+  font-size: 2.81em;
+  font-weight: 400;
+}
+.contact .infoContacto a:hover {
+  color: #f6d308;
+}
+
 /* Aquí va todo lo referente al index*/
 #container-main {
   padding: 0;
@@ -204,39 +234,123 @@ a {
   width: 24.37rem;
   height: 24.37rem;
   margin-bottom: 6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-color: transparent;
+  border-radius: 42px;
+  border: solid 2px #000000;
 }
 .img1 h3, .img2 h3, .img3 h3, .img4 h3, .img5 h3, .img6 h3 {
   font-size: 3.48em;
   color: rgb(255, 255, 255);
   font-weight: 400;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: inherit;
+}
+.card p {
+  font-size: 1.18em;
+  color: transparent;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+  padding-left: 0.65em;
+  padding-right: 0.65em;
+  margin-bottom: 0%;
+}
+.card:hover p {
+  color: rgb(255, 255, 255);
 }
 
 .img1 {
-  background-image: url(/assets/images/products/pinturas.png);
+  background-image: url(/assets/images/productos/pinturas.png);
 }
 
 .img2 {
-  background-image: url(/assets/images/products/pincelesYherramientas.png);
+  background-image: url(/assets/images/productos/pincelesYherramientas.png);
 }
 
 .img3 {
-  background-image: url(/assets/images/products/deco.png);
+  background-image: url(/assets/images/productos/decoracion.png);
 }
 
 .img4 {
-  background-image: url(/assets/images/products/madera.png);
+  background-image: url(/assets/images/productos/madera.png);
 }
 
 .img5 {
-  background-image: url(/assets/images/products/workshops.png);
+  background-image: url(/assets/images/productos/workshops.png);
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 .img6 {
-  background-image: url(/assets/images/products/lacasYbarnices.png);
+  background-image: url(/assets/images/productos/lacasYbarnices.png);
+}
+
+/*Aquí van los estilos del carrousel de marcas*/
+.titleMarcas {
+  margin-bottom: 1.5em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background-color: transparent;
+  height: 20em;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 20em;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 90s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 20em;
+  width: 19.31em;
+  background-image: url(/assets/images/marcas/fondo.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .slide img {
+  padding-bottom: 0.7em;
+}
+.slider .slide:hover {
+  background-image: url(/assets/images/marcas/fondoAmarillo.png);
 }
 
 /* Aquí va todo lo referente a la sección "Preguntas Frecuentes" */
@@ -329,6 +443,13 @@ a {
   .containerDescription p {
     font-size: 30px;
   }
+  /*  -------- Productos ---------*/
+  #products h2 {
+    font-size: 3em;
+  }
+  #products .card h3 {
+    font-size: 3em;
+  }
   /* ------ Preguntas Frecuentes ------ */
   .containerFaq h2 {
     font-size: 3em;
@@ -339,6 +460,13 @@ a {
   .containerDescription p {
     font-size: 22px;
   }
+  /* ------ Contacto ------ */
+  .contact h2 {
+    font-size: 2em;
+  }
+  #contactInfo a {
+    font-size: 1em;
+  }
 }
 @media screen and (max-width: 300px) {
   /* ------ Sobre Nosotros ------ */
@@ -347,6 +475,13 @@ a {
   }
   .containerDescription p {
     font-size: 18px;
+  }
+  /*  -------- Productos ---------*/
+  #products h2 {
+    font-size: 2em;
+  }
+  #products .card h3 {
+    font-size: 2em;
   }
   /* ------ Preguntas Frecuentes ------ */
   .containerFaq h2 {
@@ -357,5 +492,12 @@ a {
   }
   .containerFaq .faqImg img {
     width: 100%;
+  }
+  /* ------ Contacto ------ */
+  .contact h2 {
+    font-size: 2em;
+  }
+  #contactInfo a {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

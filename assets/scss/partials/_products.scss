@@ -24,14 +24,134 @@
     width: 24.37rem; //390px
     height: 24.37rem;
     margin-bottom: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: transparent;
+    border-radius: 42px;
+    border: solid 2px #000000;
 
     h3{
         font-size: 3.48em; //55px
         color: rgba(255, 255, 255, 1);
         font-weight: 400;
+        text-align: center;
+        margin-top: 1.5em;
     }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    p{
+        font-size: 1.18em; //19px
+        color: transparent;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        padding-left: 0.65em;
+        padding-right: 0.65em;
+        margin-bottom: 0%;
+    }
+    &:hover{
+        p{
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+}
+
+.img1{
+    background-image: url(/assets/images/productos/pinturas.png);
+}
+.img2{
+    background-image: url(/assets/images/productos/pincelesYherramientas.png);
+}
+.img3{
+    background-image: url(/assets/images/productos/decoracion.png);
+}
+.img4{
+    background-image: url(/assets/images/productos/madera.png);
+}
+.img5{
+    background-image: url(/assets/images/productos/workshops.png);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+.img6{
+    background-image: url(/assets/images/productos/lacasYbarnices.png);
+}
+
+/*Aquí van los estilos del carrousel de marcas*/
+
+.titleMarcas{
+    margin-bottom: 1.5em;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right, 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 90s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	background-color:transparent;
+	height: 20em;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+    display: flex;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 20em;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 20em;
+		width: 19.31em;
+        background-image: url(/assets/images/marcas/fondo.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            padding-bottom: 0.7em;
+        }
+        &:hover{
+            background-image: url(/assets/images/marcas/fondoAmarillo.png);
+        }
+        
+	}
 }
