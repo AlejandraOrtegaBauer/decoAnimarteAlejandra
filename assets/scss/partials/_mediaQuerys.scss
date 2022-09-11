@@ -19,6 +19,13 @@
         width: 100%;
     }
 
+    /* -------- Productos --------*/
+    .containerImages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     /* ------ Sobre Nosotros ------ */
     .containerDescription {
         p {
